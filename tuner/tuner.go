@@ -10,11 +10,7 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
-	"strconv"
-	"strings"
 
 	"github.com/mschoch/go-si4707"
 )

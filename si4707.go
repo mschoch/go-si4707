@@ -10,14 +10,10 @@
 package si4707
 
 import (
-	"bytes"
-	"encoding/binary"
-	"fmt"
 	"log"
 	"time"
 
 	"bitbucket.org/gmcbay/i2c"
-	"github.com/mschoch/go-rds"
 	"github.com/stianeikeland/go-rpio"
 )
 
@@ -92,5 +88,5 @@ func (d *Device) PowerUp() {
 }
 
 func (d *Device) GetRev() int {
-
+	return -1
 }
