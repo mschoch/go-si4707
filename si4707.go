@@ -77,8 +77,7 @@ func (d *Device) InitCustomAddr(addr, busNum byte) (err error) {
 	d.busNum = busNum
 	d.addr = addr
 
-	// wait max powerup time
-	time.Sleep(110 * time.Millisecond)
+	d.PowerUp()
 
 	return
 }
@@ -93,9 +92,5 @@ func (d *Device) PowerUp() {
 }
 
 func (d *Device) GetRev() int {
-
-}
-
-func (d *Device) writeCommand() {
 
 }
